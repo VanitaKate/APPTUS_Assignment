@@ -97,6 +97,9 @@ public class WeatherMapAPIRequests {
 		// code to save IDs of stations created, to be used in deleteRequest
 		String TestFile = "D:\\temp.txt";
 		File FC = new File(TestFile);//Created object of java File class.
+		if (FC.exists()) {
+			FC.delete();
+		}
 		FC.createNewFile();	
 		System.out.println(TestFile);
 		FileWriter FW = new FileWriter(TestFile);
