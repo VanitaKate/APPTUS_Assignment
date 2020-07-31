@@ -29,7 +29,7 @@ WebElement msgProcToCart;
 @FindBy(xpath="//span[contains(text(),'Proceed to checkout')]")
 WebElement btnProceedToChkOut;
 
-@FindBy(xpath="//span[@id='layer_cart_product_title']")
+@FindBy(xpath="//span[@id='layer_cart_product_title' and contains(text(),'Faded Short Sleeve T-shirts')]")
 WebElement labelProduct;
 
 @FindBy(xpath="//span[@id='layer_cart_product_attributes']")
@@ -40,6 +40,9 @@ WebElement labelQuantity;
 
 @FindBy(xpath="//span[@id='layer_cart_product_price']")
 WebElement labelTotal;
+
+
+
 public void selectTShirtCat() throws Throwable {
 	Actions action = new Actions(driver);
 	action.click(catTShirt).build().perform();
@@ -82,8 +85,11 @@ public String vrfyMessage() {
 }
 
 public String labelProduct() {
+	String S ="No Product Label found";
+	if (labelProduct.isDisplayed()) {
 String productName=labelProduct.getText();
-return productName;
+return productName;}else 
+	return S;
 			
 }
 

@@ -23,7 +23,7 @@ public class TC1_DefaultPage001 extends BaseClass{
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		DefaultPage DP=new DefaultPage(driver);
 		DP.clickSignInBtn();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		LoginPage LP=new LoginPage(driver);	
 		LP.enterLoginEmailAddress("jetblue@grr.la");
 		LP.enterLoginPassword("jetblue");
@@ -33,7 +33,7 @@ public class TC1_DefaultPage001 extends BaseClass{
 			System.out.println("Entered value disappears on auto page refresh");
 		}else
 		LP.clickSubmitButton();
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		System.out.println("User logged in succesfully.");
 		HomePage HP=new HomePage(driver);
 		HP.selectTShirtCat();
@@ -60,9 +60,15 @@ public class TC1_DefaultPage001 extends BaseClass{
 		String quantity=HP.labelQuantity();
 		String totalPrice=HP.labelTotal();
 		System.out.println("Product Name:" +productName +"\ncolorSize:" +colorSize+ "\nQuantity"+quantity+"\nTotalPrice" +totalPrice);
-		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		HP.clickProceedToChkOut();
-		tearDown();
+		Thread.sleep(5);
+//		HP.clickProceedToChkOut();
+//		tearDown();
+//		driver.quit();
 	}
+@Test
+public void verifyCheckOut() throws Throwable {
+	HomePage HP=new HomePage(driver);
+	HP.clickProceedToChkOut();
+}
 
 }

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\SHREEG\eclipse-workspace\Apptus_Coding_Assignment\testng.xml</span>
+                    <span>C:\Users\SHREEG\git\Apptus_Coding_Assignment\Apptus_Coding_Assignment\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WeatherMapAPI.WeatherMapAPIRequests" hash-for-method="TryRedeleteStations">TryRedeleteStations</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Test_Cases.TC1_DefaultPage001" hash-for-method="VerifyDefaultPageAndSignIn">VerifyDefaultPageAndSignIn</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">7 methods,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -121,6 +102,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WeatherMapAPI.WeatherMapAPIRequests" hash-for-method="TryRedeleteStations">TryRedeleteStations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Test_Cases.TC1_DefaultPage001" hash-for-method="VerifyDefaultPageAndSignIn">VerifyDefaultPageAndSignIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WeatherMapAPI.WeatherMapAPIRequests" hash-for-method="deleteStations">deleteStations</a> <!-- method navigator-link -->
@@ -141,6 +132,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="WeatherMapAPI.WeatherMapAPIRequests" hash-for-method="postStation">postStation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Test_Cases.TC1_DefaultPage001" hash-for-method="verifyCheckOut">verifyCheckOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -153,9 +149,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">Test_Cases.TC1_DefaultPage001</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,33 +160,20 @@
                   <a name="VerifyDefaultPageAndSignIn">
                   </a> <!-- VerifyDefaultPageAndSignIn -->
                   <span class="method-name">VerifyDefaultPageAndSignIn</span>
-                  <div class="stack-trace">org.openqa.selenium.JavascriptException: javascript error: Failed to execute &apos;elementsFromPoint&apos; on &apos;Document&apos;: The provided double value is non-finite.
-  (Session info: chrome=84.0.4147.89)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;SHREEG-PC&apos;, ip: &apos;192.168.225.129&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_251&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.89, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\SHREEG\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 56485410632d6cb6a91366ede23fef5e
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-	at Page_Objects.HomePage.clickProceedToChkOut(HomePage.java:68)
-	at Test_Cases.TC1_DefaultPage001.VerifyDefaultPageAndSignIn(TC1_DefaultPage001.java:64)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCheckOut">
+                  </a> <!-- verifyCheckOut -->
+                  <span class="method-name">verifyCheckOut</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">WeatherMapAPI.WeatherMapAPIRequests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -199,44 +182,8 @@ Session ID: 56485410632d6cb6a91366ede23fef5e
                   <a name="TryRedeleteStations">
                   </a> <!-- TryRedeleteStations -->
                   <span class="method-name">TryRedeleteStations</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;404&gt; but was &lt;204&gt;.
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)
-	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
-	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at WeatherMapAPI.WeatherMapAPIRequests.TryRedeleteStations(WeatherMapAPIRequests.java:232)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 42 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">WeatherMapAPI.WeatherMapAPIRequests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="deleteStations">
@@ -270,7 +217,7 @@ Expected status code &lt;404&gt; but was &lt;204&gt;.
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SHREEG\eclipse-workspace\Apptus_Coding_Assignment\testng.xml</span>
+            <span class="header-content">C:\Users\SHREEG\git\Apptus_Coding_Assignment\Apptus_Coding_Assignment\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -320,36 +267,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyDefaultPageAndSignIn')
 data.setCell(0, 2, 'Test_Cases.TC1_DefaultPage001')
-data.setCell(0, 3, 28875);
+data.setCell(0, 3, 38769);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getWeatherWithOutRegister')
-data.setCell(1, 2, 'WeatherMapAPI.WeatherMapAPIRequests')
-data.setCell(1, 3, 3342);
+data.setCell(1, 1, 'verifyCheckOut')
+data.setCell(1, 2, 'Test_Cases.TC1_DefaultPage001')
+data.setCell(1, 3, 3309);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'postStation')
+data.setCell(2, 1, 'getWeatherWithOutRegister')
 data.setCell(2, 2, 'WeatherMapAPI.WeatherMapAPIRequests')
-data.setCell(2, 3, 2279);
+data.setCell(2, 3, 3215);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deleteStations')
+data.setCell(3, 1, 'postStation')
 data.setCell(3, 2, 'WeatherMapAPI.WeatherMapAPIRequests')
-data.setCell(3, 3, 1255);
+data.setCell(3, 3, 2008);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getStations')
+data.setCell(4, 1, 'TryRedeleteStations')
 data.setCell(4, 2, 'WeatherMapAPI.WeatherMapAPIRequests')
-data.setCell(4, 3, 911);
+data.setCell(4, 3, 1281);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TryRedeleteStations')
+data.setCell(5, 1, 'deleteStations')
 data.setCell(5, 2, 'WeatherMapAPI.WeatherMapAPIRequests')
-data.setCell(5, 3, 663);
+data.setCell(5, 3, 1268);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getStations')
+data.setCell(6, 2, 'WeatherMapAPI.WeatherMapAPIRequests')
+data.setCell(6, 3, 915);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 50 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -377,39 +328,39 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Test_Cases.TC1_DefaultPage001</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">VerifyDefaultPageAndSignIn</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCheckOut</span>
+                <span class="method-start">38777 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28881 ms</span>
+                <span class="method-start">42089 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">WeatherMapAPI.WeatherMapAPIRequests</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getWeatherWithOutRegister</span>
-                <span class="method-start">29078 ms</span>
+                <span class="method-start">42337 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">postStation</span>
-                <span class="method-start">32421 ms</span>
+                <span class="method-start">45554 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getStations</span>
-                <span class="method-start">34701 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TryRedeleteStations</span>
-                <span class="method-start">35615 ms</span>
+                <span class="method-start">47564 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteStations</span>
-                <span class="method-start">36280 ms</span>
+                <span class="method-start">48481 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TryRedeleteStations</span>
+                <span class="method-start">49751 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

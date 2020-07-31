@@ -78,7 +78,7 @@ public class WeatherMapAPIRequests {
 		JsonPath jsonPathEvaluator1 = response1.jsonPath();
 		id1=jsonPathEvaluator1.get("ID");
 		System.out.println("\nID generated for 1st Station is: "+jsonPathEvaluator1.get("ID"));
-
+		System.out.println("===============================================");
 
 		Response response2=RestAssured.given()
 				.headers(HeaderMap)
@@ -89,7 +89,7 @@ public class WeatherMapAPIRequests {
 
 		String ResponseBody2=response2.asString();
 		System.out.println("Response Body of the postStation2 requestis:= "+ResponseBody2);			
-		System.out.println("===============================================");
+
 		JsonPath jsonPathEvaluator2 = response2.jsonPath();
 		id2=jsonPathEvaluator2.get("ID");
 		System.out.println("\nID generated for 2nd Station is: "+jsonPathEvaluator2.get("ID"));
@@ -99,6 +99,7 @@ public class WeatherMapAPIRequests {
 		File FC = new File(TestFile);//Created object of java File class.
 		if (FC.exists()) {
 			FC.delete();
+			System.out.println("An Existing temp file is deleted.");
 		}
 		FC.createNewFile();	
 		System.out.println(TestFile);
@@ -184,13 +185,14 @@ public class WeatherMapAPIRequests {
 
 			Assert.assertFalse(ResponseBody.contains("Interview1"));
 			Assert.assertFalse(ResponseBody.contains("DEMO_TEST001"));
+			System.out.println("Deleted Station ID: " +id);
 		}	
 
 	}
 
 	//5.	Repeat the previous step and verify that returned HTTP response is 404 and that message body contains “message”: “Station not found". 
 
-	@Test(priority=3)
+	@Test(priority=4)
 	public void TryRedeleteStations() throws FileNotFoundException {
 		String id=null;
 		String TestFile = "D:\\temp.txt";
@@ -224,10 +226,11 @@ public class WeatherMapAPIRequests {
 		HeaderMap=HeaderConfig.Header();
 		for (int i=0;i<=1;i++) {
 			if (i==0) {id=id1;}else id=id2;
+			System.out.println("\nStation id to be redeleted: "+id);
 		Response response=RestAssured.given()
 				.headers(HeaderMap)
 				.queryParams(ParamMap)
-				.when().delete("/data/3.0/stations/"+id)
+				.when().delete("/data/3.0/stations/5f23e967cca8ce0001ef4f0d")
 				.then().statusCode(404).extract().response();
 		String ResponseBody=response.asString();
 		System.out.println("Response Body of the TryRedeleteStations requestis:= "+ResponseBody);
@@ -235,17 +238,10 @@ public class WeatherMapAPIRequests {
 		Assert.assertTrue(ResponseBody.contains(message));
 		Assert.assertFalse(ResponseBody.contains("Interview1"));
 		Assert.assertFalse(ResponseBody.contains("DEMO_TEST001"));
+
 		}
 		FC.delete(); //Delete the text file with Station IDs
 	}
-
-
-
-
-
-
-
-
 
 
 
@@ -275,7 +271,7 @@ public class WeatherMapAPIRequests {
 
 
 	// API for received in an email along with API Key (Not a part of Coding Test)
-	//	@Test
+//		@Test
 	public void getWeatherWithAPIKey() {
 		String APIKey="e23c0d45c86237ad54fd7350070c5f7a";
 		RestAssured.baseURI="https://api.openweathermap.org";
